@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}HYPER EDITOR | All Tools{% endblock %}
+{% block content %}
+<section class="page-section all-tools-page">
+  <div class="page-heading tools-heading"><span class="eyebrow"><i></i> ALL TOOLS</span><h1>Everything you need for your documents.</h1><p>Choose a tool, select your file, and HYPER EDITOR will process it in the same workspace.</p></div>
+  <div class="tool-category"><div class="category-title"><span>PDF CONVERTERS</span><small>PDF to Office, images and ebook formats</small></div><div class="mega-grid">
+    <button class="mega-tool pdf" data-id="pdf_to_word"><b>PDF to Word</b><span>Editable DOCX</span><i>W</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_excel"><b>PDF to Excel</b><span>Spreadsheet extraction</span><i>X</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_pptx"><b>PDF to PPTX</b><span>Presentation slides</span><i>P</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_images"><b>PDF to Images</b><span>JPG pages</span><i>▧</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_pages"><b>PDF to Pages</b><span>Pages-compatible DOCX</span><i>✦</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_numbers"><b>PDF to Numbers</b><span>Numbers-compatible XLSX</span><i>N</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_keynote"><b>PDF to Keynote</b><span>Keynote-compatible PPTX</span><i>K</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_epub"><b>PDF to EPUB</b><span>eBook format</span><i>E</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_mobi"><b>PDF to MOBI</b><span>Calibre-based</span><i>M</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_jpg"><b>PDF to JPG</b><span>High quality pages</span><i>J</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_png"><b>PDF to PNG</b><span>Lossless pages</span><i>P</i></button>
+    <button class="mega-tool pdf" data-id="pdf_to_tif"><b>PDF to TIF</b><span>TIFF pages</span><i>T</i></button>
+  </div></div>
+
+  <div class="tool-category"><div class="category-title"><span>CREATE PDF</span><small>Office and image files to PDF</small></div><div class="mega-grid">
+    <button class="mega-tool office" data-id="docx_to_pdf"><b>Word to PDF</b><span>Office rendering</span><i>W</i></button>
+    <button class="mega-tool office" data-id="xlsx_to_pdf"><b>Excel to PDF</b><span>Workbook rendering</span><i>X</i></button>
+    <button class="mega-tool office" data-id="pptx_to_pdf"><b>PPTX to PDF</b><span>Slide rendering</span><i>P</i></button>
+    <button class="mega-tool office multi" data-id="images_to_pdf"><b>Images to PDF</b><span>Multiple images</span><i>▧</i></button>
+    <button class="mega-tool office" data-id="txt_to_pdf"><b>TXT to PDF</b><span>Clean text PDF</span><i>T</i></button>
+    <button class="mega-tool office" data-id="html_to_pdf"><b>HTML to PDF</b><span>Web document</span><i>H</i></button>
+  </div></div>
+
+  <div class="tool-category"><div class="category-title"><span>PDF SECURITY & PAGES</span><small>Protect, clean and manage PDF files</small></div><div class="mega-grid">
+    <button class="mega-tool secure" data-id="unlock_pdf"><b>Unlock PDF</b><span>Remove a known password</span><i>🔓</i></button>
+    <button class="mega-tool secure" data-id="encrypt_pdf"><b>Encrypt PDF</b><span>Set a password</span><i>🔒</i></button>
+    <button class="mega-tool secure" data-id="split_pdf"><b>Split PDF</b><span>Pages or ranges</span><i>✂</i></button>
+    <button class="mega-tool secure" data-id="merge_pdf" data-multi="pdf"><b>Combine PDF</b><span>Join in selected order</span><i>⊕</i></button>
+    <button class="mega-tool secure" data-id="rotate_pdf"><b>Rotate PDF</b><span>90°, 180° or 270°</span><i>↻</i></button>
+    <button class="mega-tool secure" data-id="compress_pdf"><b>Compress PDF</b><span>Reduce file size</span><i>◌</i></button>
+    <button class="mega-tool secure" data-id="watermark_pdf"><b>PDF Watermark</b><span>Overlay text</span><i>◇</i></button>
+    <button class="mega-tool secure" data-id="page_numbers"><b>Page Number</b><span>Automatic numbering</span><i>#</i></button>
+    <button class="mega-tool secure" data-id="extract_images"><b>Extract Images</b><span>Collect embedded images</span><i>▧</i></button>
+    <button class="mega-tool secure" data-id="reorder_pages"><b>Reorder Pages</b><span>Custom page order</span><i>⇅</i></button>
+    <button class="mega-tool secure" data-id="delete_pages"><b>Delete Pages</b><span>Remove selected pages</span><i>⌫</i></button>
+    <button class="mega-tool secure" data-id="edit_pdf"><b>PDF Studio</b><span>Edit text and pages</span><i>✎</i></button>
+  </div></div>
+
+  <div class="tool-category"><div class="category-title"><span>IMAGE CONVERTER</span><small>Common image formats</small></div><div class="mega-grid">
+    <button class="mega-tool image" data-id="png_to_jpg"><b>PNG to JPG</b><span>Convert image</span><i>PNG</i></button>
+    <button class="mega-tool image" data-id="jpg_to_png"><b>JPG to PNG</b><span>Convert image</span><i>JPG</i></button>
+    <button class="mega-tool image" data-id="heic_to_jpg"><b>HEIC to JPG</b><span>Requires HEIC codec</span><i>HEIC</i></button>
+    <button class="mega-tool image" data-id="tif_to_jpg"><b>TIF to JPG</b><span>Convert TIFF</span><i>TIF</i></button>
+    <button class="mega-tool image" data-id="bmp_to_jpg"><b>BMP to JPG</b><span>Convert bitmap</span><i>BMP</i></button>
+    <button class="mega-tool image" data-id="gif_to_jpg"><b>GIF to JPG</b><span>First frame</span><i>GIF</i></button>
+    <button class="mega-tool image" data-id="gif_to_png"><b>GIF to PNG</b><span>First frame</span><i>GIF</i></button>
+    <button class="mega-tool image" data-id="image_to_webp"><b>Image to WEBP</b><span>Modern web format</span><i>W</i></button>
+    <button class="mega-tool image" data-id="image_to_tiff"><b>Image to TIF</b><span>TIFF output</span><i>T</i></button>
+    <button class="mega-tool image" data-id="image_to_bmp"><b>Image to BMP</b><span>Bitmap output</span><i>B</i></button>
+    <button class="mega-tool image multi" data-id="gif_maker"><b>GIF Maker</b><span>Animate multiple images</span><i>GIF</i></button>
+  </div></div>
+
+  <div class="tool-category"><div class="category-title"><span>OFFICE & DOCUMENTS</span><small>Word, Excel, PowerPoint and text</small></div><div class="mega-grid">
+    <button class="mega-tool office" data-id="docx_to_jpg"><b>Word to JPG</b><span>Render pages</span><i>J</i></button>
+    <button class="mega-tool office" data-id="docx_to_png"><b>Word to PNG</b><span>Render pages</span><i>P</i></button>
+    <button class="mega-tool office" data-id="xlsx_to_csv"><b>Excel to CSV</b><span>Export worksheet data</span><i>CSV</i></button>
+    <button class="mega-tool office" data-id="csv_to_xlsx"><b>CSV to Excel</b><span>Create workbook</span><i>X</i></button>
+    <button class="mega-tool office" data-id="pptx_to_jpg"><b>PPTX to JPG</b><span>Render slides</span><i>J</i></button>
+    <button class="mega-tool office" data-id="pptx_to_png"><b>PPTX to PNG</b><span>Render slides</span><i>P</i></button>
+    <button class="mega-tool office" data-id="txt_to_word"><b>TXT to Word</b><span>Editable DOCX</span><i>W</i></button>
+    <button class="mega-tool office" data-id="docx_to_txt"><b>Word to TXT</b><span>Extract text</span><i>T</i></button>
+    <button class="mega-tool office" data-id="edit_word"><b>Word Studio</b><span>Edit DOCX</span><i>W</i></button>
+    <button class="mega-tool office" data-id="odt_to_pdf"><b>ODT to PDF</b><span>LibreOffice rendering</span><i>O</i></button>
+    <button class="mega-tool office" data-id="epub_to_pdf"><b>EPUB to PDF</b><span>eBook conversion</span><i>E</i></button>
+    <button class="mega-tool office" data-id="epub_to_mobi"><b>EPUB to MOBI</b><span>Calibre-based</span><i>M</i></button>
+    <button class="mega-tool office" data-id="mobi_to_pdf"><b>MOBI to PDF</b><span>Calibre-based</span><i>M</i></button>
+  </div></div>
+</section>
+<input id="allToolsFile" type="file" hidden>
+<div id="toolResult" class="tool-result-wrap" hidden></div>
+<div class="tool-toast" id="toolToast" hidden></div>
+{% endblock %}
+{% block extra_js %}<script src="{{ url_for('static', filename='js/tools.js') }}"></script>{% endblock %}

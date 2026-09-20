@@ -1,0 +1,11 @@
+Flask
+Pillow
+PyMuPDF
+python-docx
+openpyxl
+python-pptx
+reportlab
+pandas
+python-dotenv
+pytesseract
+beautifulsoup4pdf2docx>=0.5.8

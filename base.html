@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}HYPER EDITOR{% endblock %}</title>
+<meta name="description" content="HYPER EDITOR - professional file conversion and document editing workspace">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/converter.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/history.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+{% block extra_css %}{% endblock %}
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<header class="site-header glass">
+  <div class="header-container">
+    <a class="brand" href="{{ url_for('index') }}"><span class="brand-mark">H</span><span><b>HYPER</b><em>EDITOR</em></span></a>
+    <nav class="main-navigation">
+      <a href="{{ url_for('index') }}">Home</a><a href="{{ url_for('converter') }}">Converter</a><a href="{{ url_for('tools') }}">PDF Tools</a><a href="{{ url_for('history') }}">History</a><a href="{{ url_for('about') }}">About</a>
+    </nav>
+    <a class="header-cta" href="{{ url_for('converter') }}">Open workspace <span>↗</span></a>
+  </div>
+</header>
+<main class="main-content">{% block content %}{% endblock %}</main>
+<footer class="site-footer"><div><strong>HYPER EDITOR</strong><span>Professional file conversion & document workspace</span></div><span>Local-first processing • 2026</span></footer>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% block extra_js %}{% endblock %}
+</body></html>
