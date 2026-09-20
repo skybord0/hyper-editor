@@ -10,3 +10,4 @@ python-dotenv
 pytesseract
 beautifulsoup4>=4.12
 pdf2docx>=0.5.8
+gunicorn>=23.0
